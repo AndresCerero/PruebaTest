@@ -1,0 +1,10 @@
+.TodoSearch__Input {
+    border: 1px solid gray;
+    border-radius: 12px;
+    min-width: 260px;
+    max-width: 600px;
+    width: 60%;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+

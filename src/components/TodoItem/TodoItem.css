@@ -1,0 +1,75 @@
+.Card {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid gray;
+    margin: 20px;
+    min-width: 250px;
+    max-width: 300px;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.Card__Button {
+    position: absolute;
+    top: -10px;
+    right: -6px;
+    border-radius: 4px;
+    background-color: rgb(80, 100, 84);
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    padding: 6px;
+    transition: all 0.5s;
+    cursor: pointer;
+    font-weight: 800;
+}
+
+.Card__Button:hover {
+    background-color: rgb(99, 141, 108);
+}
+
+
+.Card__Button:active {
+    background-color: rgb(86, 112, 91);
+    box-shadow: 0 5px rgb(70, 87, 73);
+    transform: translateY(4px);
+}
+
+
+.Card__Content {
+    font-weight: 400;
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.Card--completed {
+    background-color: rgb(55, 63, 55);
+    color: white;
+    transition: 0.5s;
+    border: none;
+}
+
+.Card__Content--Icon {
+    display: inline-block;
+    width: auto;
+    margin: 0 6px 0 0;
+}
+
+.Card__Content--Icon__Oculto {
+    display: none;
+}
+
+.Card__Content--completed::before {
+    content: "✓";
+    margin-right:6px;
+    color: rgb(64, 122, 64);
+    font-size: 20px;
+}
